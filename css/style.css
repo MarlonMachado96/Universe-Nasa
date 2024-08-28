@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.container-header{
+    display: grid;
+    height: 3rem;
+    background-position: 0%;
+    width:100%;
+    border-radius: 100% 100% 100% ;
+    padding: 1.5% 0;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-family:  "inter" ;
+    
+}
+
+body {
+
+    background:  url(../img/universo.gif) no-repeat center center ;
+    background-size: cover;
+} 
+
+.caixa { 
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    width: 200px; /*ajuste se necessário */
+    height: 50px; /*ajuste se necessário*/
+    background-color:rgb(0, 247, 255);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+   
+}
+
+
+
+
+.container-main {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 50rem;
+    
+}
+
+#barrinha {
+    border-radius: 80%;
+    margin: 100px;
+    margin: 100px;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: -500px;
+    
+}
+
+
+/* Estilo das Fotos */
+.foto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.foto {
+    display: flex;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem;
+   margin-top: 10%;
+ 
+}
+
+.container {
+    border-radius: 15px;
+        
+    
+    }
+
+
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.foto img {
+    margin-right: 200px; /* Adiciona espaço entre a imagem e o texto */
+    margin-left: 40px;
+    margin-bottom: 25px;
+    border-radius: 15%;
+    box-shadow: #22b4f8 7px 7px 30px 7px;
+}
+
+.text-box {
+    margin-left: 0,1px;
+    margin-right: 200px;
+   
+    }
+
+    
+        /*celular pequeno*/
+
+        @media(max-width:360px){
+            .container-header {
+             flex-direction: column;
+            
+     }}
+     
+    
+     
+             /* Celular Médio e Grande*/
+     
+         @media(min-width:361px) and (max-width:768px) {
+             .container-header {
+                 flex-direction: column;
+     }}
+         
+     .texts .text-box {
+        flex: 1 1 100%;
+     }
+
+     /*Tablet retrato e Paisagem*/
+
+     @media(min-width: 769px) and (max-width: 1280px) {
+        .container-header {
+            flex-direction: row;
+        }
+     }
+.foto {
+    flex-direction: row;
+}
+
+.texts .text-box {
+    flex: 1 1 45%
+}
+
+/* Desktop Comum */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .container-header {
+        flex-direction: row;
+    }
+
+    .foto {
+        flex-direction: row;
+    }
+
+    .texts .text-box {
+        flex: 1 1 30%;
+    }
+}
+
+
+/* Desktop Grande */
+@media (min-width: 1441px) {
+    .container-header {
+        flex-direction: row;
+    }
+
+    .foto {
+        flex-direction: row;
+    }
+
+    .texts .text-box {
+        flex: 1 1 30%;
+    }
+}
+
+
+.container-header button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.container-header button:hover {
+    background-color: #22b4f8;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container-header img {
+    margin-right: 20px; /* Espaçamento entre a imagem e o primeiro botão */
+}
+
+.container-header a {
+    margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+.container-header button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-header button:hover {
+    background-color: #005bb5;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    
+}
+
+.hovered {
+    background-color: #63d3ff;
+    
+}
+
+button {
+    background-color: #000000; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remove sublinhado */
+    display: inline-block; /* Torna o botão um elemento inline-block */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margens */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    border-radius: 12px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.3s; /* Animações */
+}
+
+button:hover {
+    background-color: #3700ff; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+button:active {
+    background-color: #000000; /* Cor de fundo ao clicar */
+    transform: scale(0.95); /* Reduz ligeiramente o botão */
+    box-shadow: 0 5px #666; /* Sombra ao clicar */
+    transform: translateY(4px); /* Desce o botão ao clicar */
+}
+
+
+
+
+            /*Efeito Espacial*/
+
+
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+              }
+              
+              .black-hole {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: black;
+                box-shadow: 0 0 100px 50px black;
+                animation: pulse -1s infinite alternate;
+                animation-duration: 3s;
+                
+              }
+              
+              @keyframes pulse {
+                0% {
+                  width: 2000px;
+                  height: 2000px;
+                  opacity: 1;
+                }
+                100% {
+                  width: 400px;
+                  height: 400px;
+                  opacity: 0;
+                }
+              }
+              
+
+
+
+
+             /*Efeito Botão*/

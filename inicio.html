@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Estrelado Animado</title>
+    <link rel="stylesheet" href="css/style.1.css">
+   <style>
+        
+
+      
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000; /* Cor de fundo */
+        }
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: #fff; /* Cor das estrelas */
+            border-radius: 50%;
+            opacity: 0; /* Começar com opacidade zero */
+            animation: twinkle 5s infinite; /* Animação de brilho */
+        }
+        @keyframes twinkle {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+</head>
+
+
+            <div class="container-header">
+                <img src="img/nasa.png" alt="Nasinha" width="300rem" height="300rem">
+           
+            </div>
+           
+<body>
+    <script>
+        // Criar estrelas dinamicamente
+        function createStars() {
+            const numStars = 1000; // Quantidade de estrelas
+            const container = document.body;
+            
+            for (let i = 0; i < numStars; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}vw`; // Posição aleatória horizontalmente
+                star.style.top = `${Math.random() * 100}vh`; // Posição aleatória verticalmente
+                star.style.animationDelay = `${Math.random() * 5}s`; // Atraso aleatório para animação
+                container.appendChild(star);
+            }
+        }
+
+        // Chamar a função para criar as estrelas quando a página carregar
+        window.onload = createStars;
+    </script>
+
+    <script>
+        //criar itens dinamicamente
+        function carregar(){
+           
+        }
+    </script>
+                
+        <div class="caixinha" >
+            <div class="container">
+                <h2> Experimente a próxima geração de inovação e design </h2>
+                <form action="/submit-your-login-form" method="post">
+                    <input  class="circulo" type="text" id="username" name="username" placeholder="Usuário" required>
+                    <input  class="circulo" type="password" id="password" name="password" placeholder="Senha" required>
+                    <div class="Entrar">
+                    <input  class="circulo" type="submit" value="Entrar" >
+                    
+                </div>
+                </form>
+
+
+            </div>
+                     
+        </div>    
+</body>
+</html>
+
+   <!--<div class="meio">
+    <input class="circulo" type="text" placeholder="Digitar">
+</div> -->
